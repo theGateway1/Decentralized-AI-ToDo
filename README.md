@@ -4,7 +4,7 @@ A decentralized ToDo app integrated with an open source AI agent: [View Applicat
 #### Tech Stack:
 **Frontend**: React JS (Hosted on netflify) <br />
 **Backend**: Node JS, Express JS (AWS Elastic Beanstalk) <br />
-**Blockchain**: Solidity smart contract (Polygon Amoy Testnet) 
+**Blockchain**: Solidity smart contract (Hosted on Polygon Amoy Testnet) <br />
 **AI Model**: Meta-llama/Llama-3.2-1B-Instruct (Open Source)
 
 ***
