@@ -1,0 +1,15 @@
+/node_modules
+package-lock.json
+/out
+.env
+ssl-cert
+public
+*.zip
+deployment.sh
+npm-debug.log
+*.log
+*.md
+.git
+.gitignore
+Dockerfile
+docker-compose.yml

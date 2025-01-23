@@ -1,0 +1,1 @@
+exports.TaskContractAddress = '0xe2516BF6d888E040f619dd1157f423bA3be96D88'

@@ -1,0 +1,199 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+* {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  user-select: none;
+}
+
+body {
+  background: #a0e0d3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.App {
+  text-align: center;
+}
+
+h1 {
+  color: #fff;
+  margin-bottom: 0.5rem;
+  font-size: 1.75rem;
+}
+
+.centered {
+  text-align: center;
+  margin: 0 auto;
+}
+
+.TodoWrapper {
+  background: rgb(0 0 0 / 77%);
+  padding: 2rem;
+  padding-top: 1rem;
+  border-radius: 5px;
+  max-height: 25rem;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+}
+
+.todo-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.TodoForm {
+  width: 100%;
+  flex-shrink: 0;
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  margin-top: 0.7rem;
+}
+
+.edit-mode {
+  margin-bottom: 1rem;
+}
+
+.TodoList {
+  margin-top: 2rem;
+  flex-grow: 1;
+  overflow-y: auto;
+  padding-right: 0.2rem;
+  box-sizing: border-box;
+}
+
+.TodoList .Todo:last-child {
+  margin-bottom: 0;
+}
+
+.todo-input {
+  outline: none;
+  background: none;
+  border: 1px solid #0073ff;
+  padding: 0.5rem 1rem;
+  width: 300px;
+  color: #fff;
+}
+
+.todo-input::placeholder {
+  color: #ffffff4d;
+}
+
+.todo-btn {
+  background: #0073ff;
+  color: #fff;
+  border: none;
+  padding: 0.55rem;
+  cursor: pointer;
+}
+
+.btn-text-small {
+  display: none;
+}
+
+.Todo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #0073ff;
+  color: #fff;
+  padding: 0.75rem 1rem;
+  border-radius: 5px;
+  margin-bottom: 1rem;
+}
+
+.fa-trash {
+  margin-left: 0.75rem;
+}
+
+.incompleted {
+  color: #fff;
+  cursor: pointer;
+}
+
+.completed {
+  color: #cdbaff;
+  text-decoration: line-through;
+  cursor: pointer;
+}
+
+.edit-icon,
+.delete-icon {
+  cursor: pointer;
+}
+
+.chat-btn {
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  background: #bd64a6;
+  color: white;
+  border: none;
+  padding: 1rem 0.75rem;
+  border-radius: 8px;
+  cursor: pointer;
+  z-index: 1000;
+  font-weight: bold;
+}
+
+.chat-btn:hover {
+  background: #a96498;
+}
+
+/* Scrollbar style */
+
+/* width */
+::-webkit-scrollbar {
+  width: 3px;
+  height: 7px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: rgb(48, 48, 48);
+  border-radius: 5px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #0b4893;
+  border-radius: 5px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #093b77;
+}
+
+@media (max-width: 600px) {
+  .TodoList {
+    padding-right: 0;
+    -ms-overflow-style: none; /* Internet Explorer 10+ */
+    scrollbar-width: none; /* Firefox */
+  }
+
+  /* Hide scrollbar for small screens */
+  .TodoList::-webkit-scrollbar {
+    display: none; /* Safari and Chrome */
+  }
+}
+
+@media (max-width: 500px) {
+  .TodoWrapper {
+    padding: 1rem;
+    padding-top: 0.8rem;
+  }
+
+  .btn-text {
+    display: none;
+  }
+  .btn-text-small {
+    display: inline;
+  }
+}

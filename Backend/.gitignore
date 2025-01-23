@@ -1,0 +1,9 @@
+# Ignore unnecessary files
+/node_modules
+package-lock.json
+/out
+.env
+ssl-cert
+public
+*.zip
+deployment.sh
