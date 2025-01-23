@@ -26,7 +26,7 @@ A decentralized ToDo app integrated with an open source AI agent: [View Applicat
 5. Connect to [Polygon Amoy Testnet](https://chainlist.org/chain/80002). You won't need POL currency to pay gas fee for using this application, as the backend is signing the transactions with its own private key. 
 6. To enable connection to backend inside MetaMask browser, the backend uses **CloudFront as CDN**, because MetaMask has a rare issue of [relying exclusively on the (centralized) list of root certs provided by the metamask team.](https://github.com/MetaMask/metamask-mobile/issues/3422) - it trusts CloudFront issued SSL certificates.
 7. The AI agent integrated with this application is an **open source AI model** (meta-llama/Llama-3.2-1B-Instruct) available on GPT4All, integrated using **Hugging Face**.
-8. The app has a live task completion chart, built using d3.js
+8. The app has a live task completion chart, built using d3.js.
 
 ***
 
