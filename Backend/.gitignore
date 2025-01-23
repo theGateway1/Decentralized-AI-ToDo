@@ -7,3 +7,4 @@ ssl-cert
 public
 *.zip
 deployment.sh
+**/build/
