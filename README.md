@@ -42,8 +42,9 @@ AUTH_SECRET
 ```
 4. Run ```nodemon``` in backend.
 5. Run ```npm start``` in frontend.
-6. Connect your wallet.
-7. Go Crazy!
+6. Click on MetaMask extension and connect with Polygon Amoy testnet.
+7. Click on Connect wallet to connect with your wallet.
+8. Go Crazy!
 
 ***
 
