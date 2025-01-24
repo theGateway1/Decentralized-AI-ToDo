@@ -5,18 +5,18 @@ const { Results } = require('../common/typedefs')
 const moment = require('moment-timezone')
 
 const client = new HfInference(process.env.HUGGINGFACE_API_KEY)
-const currentTimeInIndia = moment().tz('Asia/Kolkata').format('Do MMM h:mm A')
 
-console.log(currentTimeInIndia)
+const currentTimeInIndia = () => {
+  return moment().tz('Asia/Kolkata').format('Do MMM h:mm A')
+}
 
 const getOverdueTasksHelper = async (taskList) => {
-  console.log('Time:', currentTimeInIndia)
   const chatCompletion = await client.chatCompletion({
     model: 'meta-llama/Llama-3.2-1B-Instruct',
     messages: [
       {
         role: 'system',
-        content: `You are an expert mathematician specializing in finding overdue tasks using simple mathematics. Based on current time: ${currentTimeInIndia}, analyze each task of the following task list and determine the tasks that are overdue. Return the exact task names separated by coma - only those tasks that are overdue as of current time. If task has no time/deadline mentioned, don't assume a deadline, just skip it. Share your analysis in 20 words or less.`,
+        content: `You are an expert mathematician specializing in finding overdue tasks using simple mathematics. Based on current time: ${currentTimeInIndia()}, analyze each task of the following task list and determine the tasks that are overdue. Return the exact task names separated by coma - only those tasks that are overdue as of current time. If task has no time/deadline mentioned, don't assume a deadline, just skip it. Share your analysis in 20 words or less.`,
       },
       {
         role: 'user',
@@ -48,7 +48,7 @@ exports.getNextTaskBasedOnPriority = async (req, res, next) => {
         messages: [
           {
             role: 'system',
-            content: `You are an expert assistant specializing in task prioritization. Based on deadlines, importance, and context, analyze the following task list and determine the task with the highest priority that I should do next. If task has deadline, the highest priority level should be given to overdue task based on current time: ${currentTimeInIndia}. Output should have one task only. Return exact task name.`,
+            content: `You are an expert assistant specializing in task prioritization. Based on deadlines, importance, and context, analyze the following task list and determine the task with the highest priority that I should do next. If task has deadline, the highest priority level should be given to overdue task based on current time: ${currentTimeInIndia()}. Output should have one task only. Return exact task name.`,
           },
           {
             role: 'user',
