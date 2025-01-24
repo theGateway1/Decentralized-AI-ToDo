@@ -34,7 +34,8 @@ A decentralized ToDo app integrated with an open source AI agent: [View Applicat
 1. Clone this repository.
 2. Run ```npm install``` inside both directories - frontend and backend.
 3. Inside backend folder, create a ```.env``` file and add following keys: 
-```&nbsp; &nbsp; ANKR_POLYGON_RPC_URL 
+```
+ANKR_POLYGON_RPC_URL 
 PRIVATE_KEY (MetaMask Wallet Key + 0x appended in front) 
 TRUFFLE_DEPLOYMENT_KEY (MetaMask Wallet Key without 0x appended in front) 
 HUGGINGFACE_API_KEY 
