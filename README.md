@@ -11,7 +11,7 @@ A decentralized ToDo app integrated with an open source AI agent: [View Applicat
 
 #### Endpoints:
 **Frontend**: https://modern-ai-todo.netlify.app <br />
-**Backend**: https://gpt4-web3-todo-app.ap-south-1.elasticbeanstalk.com/ <br />
+**Backend**: http://gpt4-web3-todo-app.ap-south-1.elasticbeanstalk.com/ <br />
 **Smart contract Address**: 0xe2516BF6d888E040f619dd1157f423bA3be96D88 <br />
 **Verify Contract**: https://amoy.polygonscan.com/txs?a=0xe2516BF6d888E040f619dd1157f423bA3be96D88&p=1 <br />
 **ABI File**: https://drive.google.com/file/d/11RIHW432wGiPrYE8IcDaer-QdIaTGPyG/view?usp=sharing
